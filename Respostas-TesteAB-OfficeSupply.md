@@ -136,4 +136,10 @@ depende de frete, cupom e desistência no checkout, coisas que o teste não toca
 **Código da versão variante:** `produto-variante-b.html` + `style-variante-b.css` (no zip).
 Construída a partir do HTML original, com apenas o bloco de preço alterado.
 
-**URLs publicadas:** ver as instruções de publicação no arquivo `COMO-PUBLICAR.md`.
+**URLs publicadas (GitHub Pages):**
+
+- Versão de Controle (A): https://jetrooliveira.github.io/teste-ab-officesupply/versao-controle/product-page-control.html
+- Versão Variante (B): https://jetrooliveira.github.io/teste-ab-officesupply/versao-variante-b/produto-variante-b.html
+- Índice com as duas versões: https://jetrooliveira.github.io/teste-ab-officesupply/
+
+Repositório com o código: https://github.com/JetroOliveira/teste-ab-officesupply
