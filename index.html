@@ -5,37 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teste A/B — OfficeSupply Online</title>
 <style>
-  body{font-family:system-ui,-apple-system,Arial,sans-serif;background:#f4f7f6;color:#0f2b33;
-       margin:0;padding:40px 20px;line-height:1.6}
-  .box{max-width:760px;margin:0 auto;background:#fff;border-radius:16px;padding:36px 40px;
-       box-shadow:0 2px 16px rgba(15,43,51,.08)}
-  h1{font-size:1.7rem;margin:0 0 6px}
-  .sub{color:#5b706a;margin:0 0 28px}
-  .opts{display:grid;gap:14px;margin-top:24px}
-  a.card{display:block;padding:20px 22px;border:1px solid #d5e6de;border-radius:12px;
-         text-decoration:none;color:inherit;transition:.15s}
-  a.card:hover{border-color:#0f6e4f;background:#f6faf8;transform:translateY(-1px)}
-  .tag{display:inline-block;font-size:.75rem;font-weight:800;padding:3px 9px;border-radius:5px;
-       margin-bottom:8px;letter-spacing:.03em}
-  .a{background:#e8eef0;color:#41595f}
-  .b{background:#d7efe4;color:#0f6e4f}
-  .card b{display:block;font-size:1.05rem;margin-bottom:3px}
-  .card span{font-size:.9rem;color:#5b706a}
-  footer{margin-top:30px;padding-top:20px;border-top:1px solid #e6eeeb;font-size:.85rem;color:#7c8d86}
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+       background:#f5f7fa;color:#2b3743;margin:0;padding:48px 20px;line-height:1.6}
+  .box{max-width:740px;margin:0 auto;background:#fff;border:1px solid #e3e8ee;
+       border-radius:14px;padding:38px 40px;
+       box-shadow:0 1px 2px rgba(16,32,48,.04),0 14px 36px -20px rgba(16,32,48,.3)}
+  h1{font-size:1.6rem;margin:0 0 6px;color:#083a75;letter-spacing:-.02em}
+  .sub{color:#6b7a88;margin:0 0 26px;font-size:.92rem}
+  .opts{display:grid;gap:14px;margin-top:22px}
+  a.card{display:block;padding:20px 22px;border:1px solid #dbe4ee;border-radius:11px;
+         text-decoration:none;color:inherit;transition:.18s;background:#fff}
+  a.card:hover{border-color:#0b4f9e;background:#f7fafd;transform:translateY(-1px);
+               box-shadow:0 8px 22px -14px rgba(11,79,158,.55)}
+  .tag{display:inline-block;font-size:.7rem;font-weight:800;padding:3px 9px;border-radius:5px;
+       margin-bottom:9px;letter-spacing:.06em}
+  .a{background:#e8eef4;color:#3d5a78}
+  .b{background:#dcf2e5;color:#17743d}
+  .card b{display:block;font-size:1.05rem;margin-bottom:3px;color:#1d2c3a}
+  .card span{font-size:.9rem;color:#6b7a88}
+  footer{margin-top:28px;padding-top:20px;border-top:1px solid #edf1f5;
+         font-size:.85rem;color:#8496a4}
+  @media(max-width:600px){body{padding:24px 14px}.box{padding:26px 22px}h1{font-size:1.35rem}}
 </style>
 </head>
 <body>
 <div class="box">
   <h1>Teste A/B — OfficeSupply Online</h1>
-  <p class="sub">Trabalho de Experiência do Usuário · FATEC Cotia · Jetro Pereira Oliveira</p>
-  <p>Duas versões da página do Kit Escritório Premium. A diferença entre elas é só o bloco de preço:
-     a variante B acrescenta ancoragem (valor riscado), desconto, economia e parcelamento.</p>
+  <p class="sub">Jetro Pereira Oliveira · Experiência do Usuário · FATEC Cotia</p>
+  <p>A diferença entre as duas versões é apenas o bloco de preço: a B acrescenta
+     ancoragem (valor riscado), desconto, economia e parcelamento.</p>
 
   <div class="opts">
     <a class="card" href="versao-controle/product-page-control.html">
       <span class="tag a">VERSÃO A · CONTROLE</span>
       <b>Página original</b>
-      <span>Preço seco: R$ 299,90, sem desconto nem parcelamento</span>
+      <span>Preço único: R$ 299,90, sem desconto nem parcelamento</span>
     </a>
     <a class="card" href="versao-variante-b/produto-variante-b.html">
       <span class="tag b">VERSÃO B · VARIANTE</span>

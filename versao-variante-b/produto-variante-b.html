@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>OfficeSupply Online</h1>
+        <div class="container header-inner">
+            <a class="logo" href="#">OfficeSupply Online</a>
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>
@@ -21,30 +21,36 @@
         </div>
     </header>
 
+    <div class="container breadcrumb">
+        <a href="#">Início</a><em>›</em><a href="#">Kits Essenciais</a><em>›</em>Kit Escritório Premium Clássico
+    </div>
+
     <main class="container">
         <section class="product-detail">
             <div class="product-image">
-                <img src="img001.jpeg" alt="Kit Escritório Premium">
+                <img src="img001.jpeg" alt="Kit Escritório Premium Clássico com canetas, caderno e organizador">
             </div>
             <div class="product-info">
-                <h2 class="product-title">Kit Escritório Premium Clássico</h2>
-                <p class="product-category">Categoria: Kits Essenciais</p>
-                <!-- VARIANTE B: único elemento alterado = bloco de oferta (ancoragem de preço) -->
-                <div class="bloco-oferta">
-                    <span class="preco-de">De R$ 379,90</span>
-                    <div class="linha-preco">
-                        <span class="current-price">R$ 299,90</span>
-                        <span class="badge-off">21% OFF</span>
+                <h1 class="product-title">Kit Escritório Premium Clássico</h1>
+                <p class="product-category">Kits Essenciais</p>
+                    <!-- VARIANTE B: unico elemento alterado = bloco de oferta (ancoragem de preco) -->
+                    <div class="bloco-oferta">
+                        <span class="preco-de">De R$ 379,90</span>
+                        <div class="linha-preco">
+                            <span class="current-price">R$ 299,90</span>
+                            <span class="badge-off">21% OFF</span>
+                        </div>
+                        <p class="economia">Você economiza R$ 80,00</p>
+                        <p class="parcelas">ou 6x de R$ 49,98 sem juros</p>
                     </div>
-                    <p class="economia">Você economiza R$ 80,00</p>
-                    <p class="parcelas">ou 6x de R$ 49,98 sem juros</p>
-                </div>
                 <p class="product-description">
-                    Um kit completo com itens essenciais de alta qualidade para o seu dia a dia no escritório. Inclui canetas, cadernos, post-its e organizadores. Perfeito para quem busca funcionalidade.
+                    Um kit completo com itens essenciais de alta qualidade para o seu dia a dia no
+                    escritório. Inclui canetas, cadernos, post-its e organizadores. Perfeito para quem
+                    busca funcionalidade.
                 </p>
                 <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 <div class="product-features">
-                    <h3>Características:</h3>
+                    <h3>Características</h3>
                     <ul>
                         <li>Canetas esferográficas de ponta fina</li>
                         <li>Caderno capa dura A5</li>
@@ -55,15 +61,29 @@
             </div>
         </section>
 
-        ---
-
         <section class="featured-products">
-            <h2>Outros Produtos que Você Pode Gostar</h2>
+            <h2>Outros produtos que você pode gostar</h2>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth">
+                <article class="product-card">
+                    <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth Silence">
                     <h3>Mouse Ergonômico Bluetooth Silence</h3>
-                    <p class="card-category">Categoria: Tecnologia Essencial</p>
+                    <p class="card-category">Tecnologia Essencial</p>
                     <p class="card-price">R$ 149,90</p>
                     <button class="add-to-cart-btn-small">Ver Detalhes</button>
-                </div>
+                </article>
+                <article class="product-card">
+                    <img src="img001.jpeg" alt="Kit Escritório Premium Clássico">
+                    <h3>Kit Escritório Premium Clássico</h3>
+                    <p class="card-category">Kits Essenciais</p>
+                    <p class="card-price">R$ 299,90</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>OfficeSupply Online &middot; Material e papelaria para escritório</p>
+    </footer>
+</body>
+</html>

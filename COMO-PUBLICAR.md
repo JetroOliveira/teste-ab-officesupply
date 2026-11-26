@@ -1,74 +1,45 @@
-# Como publicar as duas versões (para gerar as URLs da entrega)
+# Teste A/B — OfficeSupply Online
 
-Você precisa de duas URLs públicas: uma da versão A e uma da versão B.
-Escolha **uma** das opções abaixo. A primeira é a mais rápida.
+As duas versões já estão publicadas:
 
----
+| Versão | URL |
+|---|---|
+| Controle (A) | https://jetrooliveira.github.io/teste-ab-officesupply/versao-controle/product-page-control.html |
+| Variante (B) | https://jetrooliveira.github.io/teste-ab-officesupply/versao-variante-b/produto-variante-b.html |
+| Índice | https://jetrooliveira.github.io/teste-ab-officesupply/ |
 
-## Opção 1 — Netlify Drop (mais fácil, sem instalar nada)
+## Arquivos
 
-1. Acesse **https://app.netlify.com/drop**
-2. Arraste a pasta **`versao-controle`** para a página
-3. Espere alguns segundos — o Netlify gera uma URL tipo
-   `https://nome-aleatorio.netlify.app/product-page-control.html`
-4. **Copie e guarde essa URL** (é a versão A)
-5. Clique em "Sites" → arraste agora a pasta **`versao-variante-b`**
-6. Copie essa segunda URL (é a versão B)
-7. Se quiser, entre na conta gratuita para renomear os sites para algo como
-   `officesupply-controle` e `officesupply-variante-b` — fica mais apresentável na entrega
+- `versao-controle/` — página A: `product-page-control.html`, `style-control.css`, imagens.
+- `versao-variante-b/` — página B: `produto-variante-b.html`, `style-variante-b.css`, imagens.
+- `01-versao-controle-A.png` e `02-versao-variante-B.png` — prints das duas páginas.
+- `index.html` — página de índice com links para as duas versões.
+- `Respostas-TesteAB-OfficeSupply.md` — as respostas da atividade.
 
-> Precisa de conta? Não para o Drop. Se pedir login, crie uma conta gratuita com o Google.
+## Diferença entre as versões
 
----
+Só o bloco de preço. A em `versao-controle/product-page-control.html`:
 
-## Opção 2 — GitHub Pages (se você já tem conta no GitHub)
-
-```bash
-# dentro da pasta da entrega
-git init
-git add .
-git commit -m "Teste A/B OfficeSupply"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/teste-ab-officesupply.git
-git push -u origin main
+```html
+<div class="product-price">
+    <span class="current-price">R$ 299,90</span>
+</div>
 ```
 
-Depois, no repositório: **Settings → Pages → Branch: main → Save**.
-As URLs ficam:
+B em `versao-variante-b/produto-variante-b.html`:
 
-- Controle: `https://SEU-USUARIO.github.io/teste-ab-officesupply/versao-controle/product-page-control.html`
-- Variante: `https://SEU-USUARIO.github.io/teste-ab-officesupply/versao-variante-b/produto-variante-b.html`
-
----
-
-## Opção 3 — Se o professor aceitar local (só se ele pedir para rodar)
-
-Ambas as versões funcionam abrindo o HTML direto no navegador, sem servidor.
-Só cite isso se não conseguir publicar.
-
----
-
-## O que escrever na entrega
-
-Depois de publicar, cole na sua resposta:
-
-```
-Versão de Controle (A): <URL 1>
-Versão Variante (B):   <URL 2>
-Código da variante:    TesteAB-OfficeSupply-Entrega.zip (anexo)
+```html
+<div class="bloco-oferta">
+    <span class="preco-de">De R$ 379,90</span>
+    <div class="linha-preco">
+        <span class="current-price">R$ 299,90</span>
+        <span class="badge-off">21% OFF</span>
+    </div>
+    <p class="economia">Você economiza R$ 80,00</p>
+    <p class="parcelas">ou 6x de R$ 49,98 sem juros</p>
+</div>
 ```
 
----
+## Para usar com o VWO
 
-## Antes de entregar, confira as duas URLs
-
-Abra cada uma no navegador e verifique:
-
-- [ ] A versão **A** mostra o preço **sem** o bloco verde de oferta
-- [ ] A versão **B** mostra **"De R$ 379,90"**, o selo **"21% OFF"** e **"Você economiza R$ 80,00"**
-- [ ] As **imagens do produto aparecem** nas duas (o zip já inclui `img001.jpeg` e `mouse.jpg` —
-      elas precisam estar na mesma pasta do HTML)
-- [ ] O botão "Adicionar ao Carrinho" aparece nas duas
-
-Se a imagem não carregar, é porque o HTML e o `img001.jpeg` não estão na mesma pasta no serviço de
-hospedagem. Suba a pasta inteira, não só o arquivo HTML.
+No editor visual, crie o teste na URL do produto, adicione uma variação e cole o bloco `bloco-oferta` no lugar de `.product-price`. O CSS do bloco está no final de `style-variante-b.css`.
