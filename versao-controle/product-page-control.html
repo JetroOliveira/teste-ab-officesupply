@@ -7,17 +7,40 @@
     <link rel="stylesheet" href="style-control.css">
 </head>
 <body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Frete grátis acima de R$ 199 para todo o Brasil</span>
+            <span class="topbar-links"><a href="#">Central de ajuda</a><a href="#">Rastrear pedido</a></span>
+        </div>
+    </div>
+
     <header>
         <div class="container header-inner">
-            <a class="logo" href="#">OfficeSupply Online</a>
+            <a class="logo" href="#">
+                <span class="logo-mark">OS</span>
+                <span class="logo-text">OfficeSupply<em>Online</em></span>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a class="ativo" href="#">Início</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#">Promoções</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+            <div class="header-acoes">
+                <a class="icone" href="#" aria-label="Buscar">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/>
+                         <path d="M20 20l-4.2-4.2"/></svg>
+                </a>
+                <a class="icone carrinho" href="#" aria-label="Carrinho">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                         <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.6"/>
+                         <circle cx="18" cy="20" r="1.6"/><path d="M6 6L5 3H2"/></svg>
+                </a>
+            </div>
         </div>
     </header>
 
