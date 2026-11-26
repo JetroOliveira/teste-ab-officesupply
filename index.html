@@ -6,50 +6,54 @@
 <title>Teste A/B — OfficeSupply Online</title>
 <style>
   *{box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-       background:#f5f7fa;color:#2b3743;margin:0;padding:48px 20px;line-height:1.6}
-  .box{max-width:740px;margin:0 auto;background:#fff;border:1px solid #e3e8ee;
-       border-radius:14px;padding:38px 40px;
-       box-shadow:0 1px 2px rgba(16,32,48,.04),0 14px 36px -20px rgba(16,32,48,.3)}
-  h1{font-size:1.6rem;margin:0 0 6px;color:#083a75;letter-spacing:-.02em}
-  .sub{color:#6b7a88;margin:0 0 26px;font-size:.92rem}
-  .opts{display:grid;gap:14px;margin-top:22px}
-  a.card{display:block;padding:20px 22px;border:1px solid #dbe4ee;border-radius:11px;
+  body{font-family:Arial,Helvetica,sans-serif;background:#e4e9ee;color:#2f3b47;
+       margin:0;padding:0;line-height:1.6}
+  header{background:#0f2439;border-bottom:2px solid #1d4265;padding:22px 0;text-align:center}
+  header h1{margin:0;font-size:1.05rem;font-weight:200;letter-spacing:.3em;
+            text-transform:uppercase;color:#fff}
+  header p{margin:6px 0 0;font-size:.74rem;font-weight:300;letter-spacing:.16em;
+           text-transform:uppercase;color:#a9c1d6}
+  .box{max-width:760px;margin:38px auto;background:#fff;border:1px solid #e2e8ee;
+       border-radius:10px;padding:36px 40px;box-shadow:0 1px 2px rgba(15,36,57,.04)}
+  .box > p{margin:0 0 24px;color:#4a5a68;font-size:.98rem}
+  .opts{display:grid;gap:14px}
+  a.card{display:block;padding:20px 22px;border:1px solid #dde5ed;border-radius:8px;
          text-decoration:none;color:inherit;transition:.18s;background:#fff}
-  a.card:hover{border-color:#0b4f9e;background:#f7fafd;transform:translateY(-1px);
-               box-shadow:0 8px 22px -14px rgba(11,79,158,.55)}
-  .tag{display:inline-block;font-size:.7rem;font-weight:800;padding:3px 9px;border-radius:5px;
-       margin-bottom:9px;letter-spacing:.06em}
-  .a{background:#e8eef4;color:#3d5a78}
-  .b{background:#dcf2e5;color:#17743d}
-  .card b{display:block;font-size:1.05rem;margin-bottom:3px;color:#1d2c3a}
-  .card span{font-size:.9rem;color:#6b7a88}
-  footer{margin-top:28px;padding-top:20px;border-top:1px solid #edf1f5;
-         font-size:.85rem;color:#8496a4}
-  @media(max-width:600px){body{padding:24px 14px}.box{padding:26px 22px}h1{font-size:1.35rem}}
+  a.card:hover{border-color:#1d4265;background:#f6f9fc}
+  .tag{display:inline-block;font-size:.68rem;font-weight:bold;padding:4px 9px;
+       border-radius:4px;margin-bottom:9px;letter-spacing:.1em;text-transform:uppercase}
+  .a{background:#eef3f9;color:#1d4265}
+  .b{background:#e4f4ea;color:#17743d}
+  .card b{display:block;font-size:1rem;margin-bottom:3px;color:#12293f}
+  .card span{font-size:.89rem;color:#5f7183}
+  footer{background:#0f2439;color:#a9c1d6;text-align:center;padding:26px 0;margin-top:40px;
+         font-size:.78rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase}
+  @media(max-width:600px){.box{padding:26px 22px;margin:24px 14px}header h1{font-size:.95rem}}
 </style>
 </head>
 <body>
+<header>
+  <h1>OfficeSupply Online</h1>
+  <p>Teste A/B &middot; Kit Escritório Premium</p>
+</header>
+
 <div class="box">
-  <h1>Teste A/B — OfficeSupply Online</h1>
-  <p class="sub">Jetro Pereira Oliveira · Experiência do Usuário · FATEC Cotia</p>
-  <p>A diferença entre as duas versões é apenas o bloco de preço: a B acrescenta
-     ancoragem (valor riscado), desconto, economia e parcelamento.</p>
+  <p>A diferença entre as duas versões é apenas o bloco de preço.</p>
 
   <div class="opts">
     <a class="card" href="versao-controle/product-page-control.html">
-      <span class="tag a">VERSÃO A · CONTROLE</span>
+      <span class="tag a">Versão A &middot; Controle</span>
       <b>Página original</b>
-      <span>Preço único: R$ 299,90, sem desconto nem parcelamento</span>
+      <span>Preço único: R$ 299,90</span>
     </a>
     <a class="card" href="versao-variante-b/produto-variante-b.html">
-      <span class="tag b">VERSÃO B · VARIANTE</span>
+      <span class="tag b">Versão B &middot; Variante</span>
       <b>Com bloco de oferta</b>
-      <span>De R$ 379,90 · 21% OFF · economiza R$ 80,00 · 6x de R$ 49,98</span>
+      <span>De R$ 379,90 &middot; 21% OFF &middot; economiza R$ 80,00 &middot; 6x de R$ 49,98</span>
     </a>
   </div>
-
-  <footer>Hipótese: ancorar o preço aumenta a percepção de valor e a taxa de adição ao carrinho.</footer>
 </div>
+
+<footer>Jetro Pereira Oliveira</footer>
 </body>
 </html>
